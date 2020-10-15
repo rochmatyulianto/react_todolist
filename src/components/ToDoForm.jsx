@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import Proptypes from "prop-types";
 
-const ToDoForm = () => {
+const ToDoForm = ({ addTodo }) => {
+  const [value, setValue] = useState("");
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!value) {
+      alert("no blank todo!");
+      return;
+    }
+
+    addTodo(value);
+    alert(value);
+    setValue("");
+  };
+
   return (
     <section className="add">
-      <div className="add-form">
-        <input className="add-input" type="text" />
+      <div className="add-form" onSubmit={handleFormSubmit}>
+        <input
+          className="add-input"
+          type="text"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+        />
         <button className="add-btn main-black-color">Add</button>
       </div>
     </section>
   );
 };
 
+ToDoForm.proptypes = {
+  addTodo: Proptypes.func.isRequired
+};
 export default ToDoForm;
