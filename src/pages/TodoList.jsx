@@ -12,14 +12,19 @@ const TodoList = () => {
     { text: "Learning React!" }
   ]);
 
+  const [showAdd, setShowAdd] = useState(false);
+
   const addTodo = (value) => {
     const addedTodo = [...todos, { text: value }];
     setTodos(addedTodo);
   };
+
+  const showAddToggle = () => setShowAdd(!showAdd);
+
   return (
     <Paper>
-      <Header />
-      <ToDoForm addTodo={addTodo} />
+      <Header showAddToggle={showAddToggle} />
+      <ToDoForm addTodo={addTodo} showAdd={showAdd} />
       <Todos todos={todos} />
     </Paper>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 
 import Todo from "./Todo";
 
@@ -15,6 +15,6 @@ const Todos = ({ todos }) => {
 };
 
 Todos.propTypes = {
-  todos: Proptypes.arrayOf(Proptypes.shape({ text: Proptypes.string }))
+  todos: PropTypes.arrayOf(PropTypes.shape({ text: PropTypes.string }))
 };
 export default Todos;
