@@ -12,6 +12,12 @@ const ToDoForm = ({ addTodo, showAdd }) => {
       return;
     }
 
+    if (value.length > 40) {
+      alert("please create a shorter text! , max 40 char");
+      setValue("");
+      return;
+    }
+
     addTodo(value);
     setValue("");
   };
