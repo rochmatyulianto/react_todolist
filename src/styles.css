@@ -44,31 +44,31 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container {
+/* .container {
   width: 600px;
   height: 800px;
   background-color: #f2eecb;
   border-radius: 4px;
 
   padding: 32px;
-}
+} */
 
-.frame {
+/* .frame {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   border: 1px solid var(--main-black-color);
   height: 100%;
-}
+} */
 
-.header {
+/* .header {
   display: flex;
   align-items: flex-start;
 }
 
 .header-title {
-  /*   flex: 1; */
+ 
   width: 52%;
 
   text-align: center;
@@ -78,7 +78,7 @@ html {
   font-family: "Homemade Apple", sans-serif;
   text-transform: lowercase;
 }
-
+ */
 /* .header-btn {
   width: 24%;
 
