@@ -8,7 +8,7 @@ import * as styles from "./paper.styles";
 const Paper = ({ children }) => {
   const theme = useTheme();
   return (
-    <div css={styles.paper}>
+    <div css={styles.paper({ theme })}>
       <div css={styles.frame({ theme })}>{children}</div>
     </div>
   );

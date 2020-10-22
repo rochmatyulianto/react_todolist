@@ -1,9 +1,9 @@
 import { css } from "@emotion/core";
 
-export const paper = () => css`
+export const paper = ({ theme }) => css`
   width: 600px;
   height: 800px;
-  background-color: #f2eecb;
+  background-color: ${theme.background.color.primary};
   border-radius: 4px;
 
   padding: 32px;
