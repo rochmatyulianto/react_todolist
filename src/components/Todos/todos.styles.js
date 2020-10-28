@@ -12,8 +12,8 @@ export const addButtonPlaceholderText = () => css`
   font-size: 24px;
 `;
 
-export const todos = () => css`
+/* export const todos = () => css`
   display: flex;
   flex-direction: column;
   min-height: 500px;
-`;
+`; */
