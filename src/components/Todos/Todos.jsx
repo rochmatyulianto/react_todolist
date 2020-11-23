@@ -4,12 +4,11 @@ import { jsx } from "@emotion/core";
 
 import PropTypes from "prop-types";
 
-import Todo from "../Todo/Todo";
+import Todo from "../Todo/todoClass";
 
 import * as styles from "./todos.styles";
 
 import Container from "../../layout/Container";
-import Item from "../../layout/Item";
 
 const Todos = ({ todos, completeTodo }) => {
   return (

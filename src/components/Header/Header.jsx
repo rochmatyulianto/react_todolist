@@ -2,7 +2,7 @@
 /* import React from "react"; */
 import { jsx } from "@emotion/core";
 import PropTypes from "prop-types";
-import Button from "../Button/Button";
+import Button from "../Button/Buttonclass";
 
 import Container from "../../layout/Container";
 import Item from "../../layout/Item";
