@@ -1,7 +1,8 @@
 /**@jsx jsx */
-/* import React from "react"; */
+import React from "react";
+import { Link } from "react-router-dom";
 import { jsx } from "@emotion/core";
-
+import Item from "../../layout/Item";
 import PropTypes from "prop-types";
 
 import Todo from "../Todo/todoClass";
@@ -27,11 +28,20 @@ const Todos = ({ todos, completeTodo }) => {
             );
           })}
         {todos.length === 0 && (
-          <div css={styles.todoPlaceholderText}>
-            add todo by clicking{" "}
-            <span css={styles.addButtonPlaceholderText}> Add</span> buttton on
-            the left corner{" "}
-          </div>
+          <React.Fragment>
+            <div css={styles.todoPlaceholderText}>
+              add todo by clicking{" "}
+              <span css={styles.addButtonPlaceholderText}> Add</span> buttton on
+              the left corner{" "}
+            </div>
+            <Container justifyContent="center">
+              <Item>
+                <span css={styles.SeeAboutPlaceholderText}>
+                  <Link to="/about">About Page</Link>
+                </span>
+              </Item>
+            </Container>
+          </React.Fragment>
         )}
       </Container>
     </section>

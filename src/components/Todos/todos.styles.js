@@ -17,3 +17,9 @@ export const addButtonPlaceholderText = () => css`
   flex-direction: column;
   min-height: 500px;
 `; */
+
+export const SeeAboutPlaceholderText = () =>
+  css`
+    font-family: "bungee", sans-serif;
+    font-size: 18px;
+  `;
