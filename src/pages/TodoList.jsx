@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState } from "react";
+import useStateWithLocalStorage from "../hooks/useStateWithLocalStorage";
 import Paper from "../components/Paper/paperClass";
 import Header from "../components/Header/HeaderClass";
 import ToDoForm from "../components/ToDoForm/todoformClass";
@@ -14,16 +14,18 @@ const TodoList = () => {
   ]);
  */
 
-  const [todos, setTodos] = useState(
+  /*  const [todos, setTodos] = useState(
     JSON.parse(localStorage.getItem("todos")) || []
-  );
+  ); */
+
+  const [todos, setTodos] = useStateWithLocalStorage("todos");
 
   const [showAdd, setShowAdd] = useState(false);
 
-  useEffect(() => {
+  /*  useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
-
+ */
   const addTodo = (value) => {
     if (todos.length < 10) {
       const addedTodo = [...todos, { text: value, isCompleted: false }];
