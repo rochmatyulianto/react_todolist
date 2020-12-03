@@ -4,7 +4,7 @@ import Button from "../Button/Buttonclass";
 import styled from "@emotion/styled";
 
 import Container from "../../layout/Container";
-import Item from "../../layout/Item";
+import Item from "../../layout/ItemClass";
 /* import styles from "./header.module.css"; */
 import { withTheme } from "emotion-theming";
 

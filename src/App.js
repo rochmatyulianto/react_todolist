@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { ThemeProvider } from "emotion-theming";
 
-import TodoList from "./pages/TodoList";
+import TodoList from "./pages/TodoListClass";
 import About from "./pages/About";
 
 const theme = {
